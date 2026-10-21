@@ -1,10 +1,16 @@
 const grade = new Promise((resolve,reject)=>{
-    let marks = 90;
+    let marks = 76;
 
-    if(marks >=50){
-        resolve(" you pass")
+    if(marks >=80){
+        resolve(" grade A")
+    }else if(marks>=70){
+        resolve("grade B")
+    }else if(marks=>60){
+        resolve("grade C")
+    }else if(marks >=50){
+        resolve("grade D")
     }else{
-        reject("you fail ")
+        reject("you fail")
     }
 })
 
